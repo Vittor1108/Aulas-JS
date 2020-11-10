@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de velocidade</title>
+</head>
+<body>
+    <h1>Contador de Velocidade</h1>
+    Velcoidade do carro:<input type="number" name="tnt1" id ="tn1"> KM/HM
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res"></div>
+    <script>
+
+        
+        function calcular(){
+            var tn1 = document.getElementById('tn1');
+            var res = document.querySelector('div#res');
+            var vel = Number(tn1.value);
+            res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}KM/h</strong></p>`;
+            if(vel > 60){
+                res.innerHTML = `<p>O limite daquela via era 60KM/h, você ultrapassou e recebeu uma multa de R$100,00</p>`
+            }
+            res.innerHTML += `<p>Diriga Sempre com cinto de segurança!</p>`
+        }
+    </script>
+</body>
+</html>
