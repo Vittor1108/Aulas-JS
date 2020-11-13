@@ -1,0 +1,75 @@
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: rgb(70, 147, 216);
+        }
+
+        h1{
+            color: white;
+            text-align: center;
+            margin-top: 2em;
+            margin-bottom: .5em;
+        }
+
+        .central{
+            background-color: white;
+            margin: 0 auto;
+            width:650px;
+            border-radius:10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
+        }
+
+        #container-1{
+            text-align:center;
+            display:inline-block;
+            width:100%;
+            margin-top: 3em;
+            font-size: 1.2em;
+        }
+        
+        #container-1 fieldset{
+            border: none;
+        }
+
+        #container-1 input[type="button"]{
+            display:block;
+            margin: 2em auto;
+            width:20%;
+            padding: 5px;
+            background-color: rgb(70, 70, 184);
+            border:none;
+            color: white;
+            transition: background .5s;
+        }
+
+        #container-1 input[type="button"]:hover{
+            background-color: rgb(48, 48, 129); ;
+        }
+
+        #container-2{
+            text-align:center;
+            display:inline-block;
+            width:100%;
+            margin-top: .5em;
+            margin-bottom: 3em;
+            font-size: 1.2em;
+        }
+
+ 
+
+        .rodape{
+            color: white;
+            margin-top: 3em;
+            padding: 1em;
+            width:100%;
+            text-align:center;
+            box-sizing: border-box;
+        }
+
+        .rodape p{
+            font-style: italic;
+        }
